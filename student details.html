@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - Student Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #003d80;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #004da1;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="number"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004080;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="home page.html">About</a>
+        <a href="students.html">Students</a>
+        <a href="contact details.html">Contact</a>
+        <a href="login to access marks,grades.html">Login</a>
+    </nav>
+
+    <main>
+        <h2>Student Details</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone number</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                  <!-- Student 1 -->
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@gmail.com</td>
+                <td>9578456123</td>
+                
+            </tr>
+            <!-- Student 2 -->
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@gmail.com</td>
+                <td>9212345678</td>
+                
+            </tr>
+            <!-- Student 3 -->
+            <tr>
+                <td>3</td>
+                <td>Michael Johnson</td>
+                <td>michaeljohnson@gmail.com</td>
+                <td>9784596380</td>
+                
+            </tr>
+            <!-- Student 4 -->
+            <tr>
+                <td>4</td>
+                <td>Emily Davis</td>
+                <td>emilydavis@gmail.com</td>
+                <td>8978965432</td>
+               
+            </tr>
+            <!-- Student 5 -->
+            <tr>
+                <td>5</td>
+                <td>David Wilson</td>
+                <td>davidwilson@gmail.com</td>
+                <td>8885296374</td>
+                
+            </tr>
+            <!-- Student 6 -->
+            <tr>
+                <td>6</td>
+                <td>Linda Martinez</td>
+                <td>lindamartinez@gmail.com</td>
+                <td>8714725836</td>
+                
+            </tr>
+            <!-- Student 7 -->
+            <tr>
+                <td>7</td>
+                <td>James Brown</td>
+                <td>jamesbrown@gmail.com</td>
+                <td>8578985282</td>
+                
+            </tr>
+            <!-- Student 8 -->
+            <tr>
+                <td>8</td>
+                <td>Alice Garcia</td>
+                <td>alicegarcia@gmail.com</td>
+                <td>8387419516</td>
+              
+            </tr>
+            <!-- Student 9 -->
+            <tr>
+                <td>9</td>
+                <td>Robert Clark</td>
+                <td>robertclark@gmail.com</td>
+                <td>8095786354</td>
+                
+            </tr>
+            <!-- Student 10 -->
+            <tr>
+                <td>10</td>
+                <td>Susan Lewis</td>
+                <td>susanlewis@gmail.com</td>
+                <td>7874185296</td>
+               
+            </tr>
+
+
+                <!-- Add more student records here -->
+            </tbody>
+        </table>
+
+            </main>
+
+    <footer>
+        <p>&copy; 2024 Student Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

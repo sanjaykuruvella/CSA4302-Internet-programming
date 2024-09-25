@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e6f0ff, #b3d1ff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:yellow;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .info-table {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+
+    <h1>Student Information</h1>
+</header>
+
+
+<main>
+    <h2>List of Students</h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Marks (%)</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student 1 -->
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>10</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+            <!-- Student 2 -->
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>10</td>
+                <td>92</td>
+                <td>A</td>
+            </tr>
+            <!-- Student 3 -->
+            <tr>
+                <td>3</td>
+                <td>Michael Johnson</td>
+                <td>10</td>
+                <td>90</td>
+                <td>A</td>
+            </tr>
+            <!-- Student 4 -->
+            <tr>
+                <td>4</td>
+                <td>Emily Davis</td>
+                <td>10</td>
+                <td>89</td>
+                <td>B+</td>
+            </tr>
+            <!-- Student 5 -->
+            <tr>
+                <td>5</td>
+                <td>David Wilson</td>
+                <td>10</td>
+                <td>88</td>
+                <td>B+</td>
+            </tr>
+            <!-- Student 6 -->
+            <tr>
+                <td>6</td>
+                <td>Linda Martinez</td>
+                <td>10</td>
+                <td>87</td>
+                <td>B</td>
+            </tr>
+            <!-- Student 7 -->
+            <tr>
+                <td>7</td>
+                <td>James Brown</td>
+                <td>10</td>
+                <td>85</td>
+                <td>B</td>
+            </tr>
+            <!-- Student 8 -->
+            <tr>
+                <td>8</td>
+                <td>Alice Garcia</td>
+                <td>10</td>
+                <td>83</td>
+                <td>B</td>
+            </tr>
+            <!-- Student 9 -->
+            <tr>
+                <td>9</td>
+                <td>Robert Clark</td>
+                <td>10</td>
+                <td>80</td>
+                <td>B</td>
+            </tr>
+            <!-- Student 10 -->
+            <tr>
+                <td>10</td>
+                <td>Susan Lewis</td>
+                <td>10</td>
+                <td>78</td>
+                <td>C+</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Subjects & Marks</h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Social Studies</th>
+                <th>Physical Education</th>
+            </tr>
+        </thead>
+        <tbody>
+             <!-- Student 1 -->
+            <tr>
+                <td>John Doe</td>
+                <td>98</td>
+                <td>94</td>
+                <td>96</td>
+                <td>95</td>
+                <td>92</td>
+            </tr>
+            <!-- Student 2 -->
+            <tr>
+                <td>Jane Smith</td>
+                <td>95</td>
+                <td>90</td>
+                <td>94</td>
+                <td>93</td>
+                <td>91</td>
+            </tr>
+            <!-- Student 3 -->
+            <tr>
+                <td>Michael Johnson</td>
+                <td>93</td>
+                <td>92</td>
+                <td>90</td>
+                <td>88</td>
+                <td>89</td>
+            </tr>
+            <!-- Student 4 -->
+            <tr>
+                <td>Emily Davis</td>
+                <td>89</td>
+                <td>85</td>
+                <td>87</td>
+                <td>86</td>
+                <td>84</td>
+            </tr>
+            <!-- Student 5 -->
+            <tr>
+                <td>David Wilson</td>
+                <td>88</td>
+                <td>87</td>
+                <td>86</td>
+                <td>85</td>
+                <td>82</td>
+            </tr>
+            <!-- Student 6 -->
+            <tr>
+                <td>Linda Martinez</td>
+                <td>87</td>
+                <td>84</td>
+                <td>85</td>
+                <td>83</td>
+                <td>81</td>
+            </tr>
+            <!-- Student 7 -->
+            <tr>
+                <td>James Brown</td>
+                <td>85</td>
+                <td>82</td>
+                <td>84</td>
+                <td>80</td>
+                <td>79</td>
+            </tr>
+            <!-- Student 8 -->
+            <tr>
+                <td>Alice Garcia</td>
+                <td>83</td>
+                <td>81</td>
+                <td>80</td>
+                <td>82</td>
+                <td>78</td>
+            </tr>
+            <!-- Student 9 -->
+            <tr>
+                <td>Robert Clark</td>
+                <td>80</td>
+                <td>79</td>
+                <td>78</td>
+                <td>76</td>
+                <td>75</td>
+            </tr>
+            <!-- Student 10 -->
+            <tr>
+                <td>Susan Lewis</td>
+                <td>78</td>
+                <td>76</td>
+                <td>75</td>
+                <td>74</td>
+                <td>72</td>
+            </tr>
+            <!-- Add more students as needed -->
+        </tbody>
+    </table>
+</main>
+
+<footer>
+
+    <header>
+        
+        <a href="home page.html" class="home-button">Home</a>
+    </header>
+
+    <p>&copy; 2024 Student Management System. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Contact Us</title>     
+    <style>         
+        /* General Styles */         
+        * {             
+            margin: 0;             
+            padding: 0;             
+            box-sizing: border-box;             
+            font-family: Arial, sans-serif;         
+        }          
+        
+        /* Background Image Styling */
+        body {             
+            background-image: url('https://i.pinimg.com/originals/3f/75/10/3f7510f0ea21b811d7d19c2f241a05e6.jpg'); /* Replace 'your-image.jpg' with the path to your image */             
+            background-size: cover; /* Ensures the image covers the entire background */             
+            background-position: center; /* Centers the background image */             
+            background-repeat: no-repeat; /* Prevents the image from repeating */             
+            padding: 20px;         
+        }          
+        
+        h1 {             
+            text-align: center;             
+            margin-bottom: 30px;         
+        }          
+        
+        /* Contact Container */         
+        .contact-container {             
+            max-width: 800px;             
+            margin: 0 auto;             
+            background-color: pink;             
+            padding: 30px;             
+            border-radius: 10px;             
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);         
+        }          
+        
+        /* Contact Details Section */         
+        .contact-details {             
+            margin-bottom: 30px;         
+        }          
+        
+        .contact-details h2 {             
+            margin-bottom: 10px;             
+            color: #ff6347;         
+        }          
+        
+        .contact-details p {             
+            margin-bottom: 5px;             
+            font-size: 16px;             
+            color: #555;         
+        }          
+        
+        /* Contact Form Section */         
+        .contact-form {             
+            margin-top: 20px;         
+        }          
+        
+        .contact-form input[type="text"],         
+        .contact-form input[type="email"],         
+        .contact-form textarea {             
+            width: 100%;             
+            padding: 10px;             
+            margin: 10px 0;             
+            border: 1px solid #ccc;             
+            border-radius: 5px;         
+        }          
+        
+        .contact-form textarea {             
+            height: 150px;         
+        }          
+        
+        .contact-form input[type="submit"] {             
+            padding: 10px 20px;             
+            background-color: #28a745;             
+            border: none;             
+            color: white;             
+            border-radius: 5px;             
+            font-size: 16px;             
+            cursor: pointer;         
+        }          
+        
+        .contact-form input[type="submit"]:hover {             
+            background-color: #218838;         
+        }          
+        
+        /* Home Button Section */         
+        .home-button-container {             
+            text-align: center;             
+            margin-top: 20px;         
+        }          
+        
+        .home-button {             
+            padding: 10px 20px;             
+            background-color: #007bff;             
+            color: white;             
+            text-decoration: none;             
+            border-radius: 5px;             
+            font-size: 16px;             
+            display: inline-block;         
+        }          
+        
+        .home-button:hover {             
+            background-color: #0056b3;         
+        }     
+    </style> 
+</head> 
+<body>     
+    <h1>Contact Us</h1>      
+    <div class="contact-container">         
+        <!-- Contact Details -->         
+        <div class="contact-details">             
+            <h2>Get in Touch</h2>             
+            <p><strong>Phone:</strong> +1 123-456-7890</p>             
+            <p><strong>Email:</strong> contact@collage.com</p>             
+            <p><strong>Address:</strong> 123 Cetepede, Gourmet City, FL 12345</p>         
+        </div>          
+        
+        <!-- Contact Form -->         
+        <div class="contact-form">             
+            <h2>Send Us a Message</h2>             
+            <form id="contactForm">                 
+                <input type="text" name="name" placeholder="Your Name" required>                 
+                <input type="email" name="email" placeholder="Your Email" required>                 
+                <textarea name="message" placeholder="Your Message" required></textarea>                 
+                <input type="submit" value="Send Message">             
+            </form>         
+        </div>          
+        
+        <!-- Home Button -->         
+        <div class="home-button-container">             
+            <a href="home page.html" class="home-button">Home</a>         
+        </div>     
+    </div>      
+
+    <script>         
+        // Function to handle form submission and show alert         
+        document.getElementById('contactForm').addEventListener('submit', function(event) {             
+            event.preventDefault(); // Prevent form from submitting normally              
+            // Get form values             
+            var name = document.querySelector('input[name="name"]').value;             
+            var email = document.querySelector('input[name="email"]').value;             
+            var message = document.querySelector('textarea[name="message"]').value;              
+            // Display alert with the form details             
+            alert('Message Sent!\n\nName: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);              
+            // Optional: Reset the form after submission             
+            document.getElementById('contactForm').reset();         
+        });     
+    </script> 
+</body> 
+</html>
